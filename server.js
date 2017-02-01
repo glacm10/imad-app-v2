@@ -19,7 +19,7 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 app.get('/communitiies', function (req, res) {
-  res.send('BMC Community URL- https://www.communities.bmc.com/');
+  //res.send('BMC Community URL- https://www.communities.bmc.com/');
    res.sendFile(path.join(__dirname, 'ui', 'communities.html'));
 });
 app.get('/supportcentral', function (req, res) {
