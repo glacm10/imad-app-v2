@@ -18,8 +18,12 @@ app.get('/ui/style.css', function (req, res)  //if  /ui/style.css this url reque
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
-
-
+app.get('/Communitiies', function (req, res) {
+  res.sendFile(path.join('BMC Community URL- https://www.communities.bmc.com/'));
+});
+app.get('/Support Central', function (req, res) {
+  res.sendFile(path.join('BMC Support Central URL- https://www.support.bmc.com/'));
+});
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
   console.log(`IMAD course app listening on port ${port}!`);
